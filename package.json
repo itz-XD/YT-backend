@@ -15,6 +15,10 @@
   "author": "itz-XD",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
   }
 }

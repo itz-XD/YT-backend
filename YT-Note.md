@@ -81,7 +81,7 @@ git commit -m "setup project files - part 1"
 ## Aur kyuki humne `upstream` set kar diya hai to directly `git push` kar sakte hai
 
 ```javascript
-git push ❌❌❌❌❌
+git push ✅✅✅✅✅
 ```
 
 ## To `git push` karenge to hamare almost sare files waha pe chal jane chaiye
@@ -107,7 +107,7 @@ git push ❌❌❌❌❌
 ## To ye hamara ho gaya ek `professional structure project` ka, ab har company me ye structure thoda bahut alag hota hai 19-20 ka fark hota hai.
 
 ```javascript
-mkdir controllers db middlewares models routes utils ❌❌❌❌❌
+mkdir controllers db middlewares models routes utils ✅✅✅✅✅
 ```
 
 ## Ab jaise hi mai ye enter karta hoon to mare sare ye project ban gaye hai, lakin problem abhi bhi wahi hai agar mai git se puchunga ki `git status` bata kya chal raha hai abhi to thik hai aapki package.json wagera to modify hue hai waise to nahi honi chaiye thi😅... hmmm `not staged`. stage nahi kra kya abhi kar dete hai `stage`. lakin aap dekhange ye jo controllers wagera hai in folders📁 ko abhi kuch bhi track nahi kar raha hai kyuki inke ander files🗒️ hi nahi hai ab ya to mai sabke ander jaaun aur ek ek ke ander `.gitkeep` rakhu, lakin koi sence bhi nahi hai unko rakhne ka kyuki un files 🗒️ me jaise kaise kaam aayega waise rakh dange tabka mare local me rahega.
@@ -120,23 +120,25 @@ mkdir controllers db middlewares models routes utils ❌❌❌❌❌
 
 # Install `prettier` to be safe from future conflicts.
 
-`npm i -D prettier` ❌❌❌❌❌
+`npm i -D prettier` ✅✅✅✅✅
 
 ### Ab jaise hi aapne `prettier` install kra to kuch hua to hai hi nahi, prettier actually me jab hi aata hai to aapko actually me kuch thode se kaam karne padte hai 2-3 files 🗒️ aapko apni taraf se add karni padti hai.
 
 `1.` `.prettierrc` - ye kya hoti hai ye sare ke sare prettier ke configurations hai
 
 ```javascript
-"sngleQuote": false,
-"bracketSpacing": true,
-"tabWidth": 2,
-"trailingComma": "es5",
-"semi": true ❌❌❌❌❌
+{
+    "sngleQuote": false,
+    "bracketSpacing": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "semi": true ✅✅✅✅✅
+}
 ```
 
 ## Ye to ho gaya ki mai apne poore project ka setup kis tarah se rakhunga, ab automatically yaha pe kya hoga prettier yaha pe ab jab aap left bottom me click karoge to prettier ko apne aap mil jayega ki aacha thik hai `prettier` hai aur kai bar project ko `restart` ya `reload` bhi karna padta hai.
 
-`2.` `prettierignore` - ab ye prettierignore kya karta hai ki kon kon se file me mujhe prettier ko impliment nahi karna hai wo mujhe bata do uske ander sabse important jo mai laga hu usually, meri jo `invironment` variable file hai na please usko touch mat karna kyuki usko syntak thoda sa na weard hota hai `key value pairs` to prettier jab jab kuch karne ki kosis karta hai hamesa kabada karta hai to mujhe pasand nahi hai, kisi bhi tarah ki .env mat lena.
+`2.` `.prettierignore` - ab ye prettierignore kya karta hai ki kon kon se file me mujhe prettier ko impliment nahi karna hai wo mujhe bata do uske ander sabse important jo mai laga hu usually, meri jo `invironment` variable file hai na please usko touch mat karna kyuki usko syntak thoda sa na weard hota hai `key value pairs` to prettier jab jab kuch karne ki kosis karta hai hamesa kabada karta hai to mujhe pasand nahi hai, kisi bhi tarah ki .env mat lena.
 
 ```javascript
 /.vscode
@@ -145,7 +147,7 @@ mkdir controllers db middlewares models routes utils ❌❌❌❌❌
 
 *.env
 .env
-.env.* ❌❌❌❌❌
+.env.* ✅✅✅✅✅
 ```
 
 # Ye hamara ho gaya basic ek configration ki kis tarah se `prettier` aur ye sab `setup` kiya jata hai.
